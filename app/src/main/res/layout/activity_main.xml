@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="#7f7070">
 <LinearLayout
     android:id="@+id/footer_layout"
     android:layout_width="match_parent"
@@ -106,5 +106,30 @@
     </LinearLayout>
 
 </LinearLayout>
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Loading..."
+        android:id="@+id/textView5"
+        android:layout_below="@+id/calendarView"
+        android:layout_alignStart="@+id/calendarView"
+        android:layout_marginStart="28dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        style="@android:style/Widget.Holo.Light.ProgressBar"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
 
 </RelativeLayout>
